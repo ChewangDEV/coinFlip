@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F172A ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E293B;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #F8FAFC;
+}
+
+#result{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #F8FAFC;
+    text-align: center;
+}
+
+.counters{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+p{
+    color: #F8FAFC;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+span{
+    color: #22C55E;
+}
+
+#lose{
+    color: #EF4444 ;
+}
+
+.animation{
+    animation: rotate 0.8s linear;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(1440deg);
+    }
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #FBBF24;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #result {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .counters {
+    gap: 15px;
+  }
+
+  .buttons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #result {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .counters {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
