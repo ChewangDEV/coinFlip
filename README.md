@@ -2,6 +2,8 @@
 
 A simple and fun Coin Flip Game built with **HTML, CSS, and JavaScript**. Flip a virtual coin and test your luck! The game randomly generates either **Heads** or **Tails** with a smooth animation and keeps the experience interactive and engaging.
 
+Link: https://chewangdev.github.io/coinFlip/
+
 ##  Features
 
 *  Random coin flip generation
